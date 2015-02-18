@@ -10,6 +10,9 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
+
+        <link rel="stylesheet" href="css/mini-search.css">
+
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
         <!-- endbower -->
         <!-- endbuild -->
@@ -18,26 +21,48 @@
         <link rel="stylesheet" href="styles/custom.css">
         <!-- endbuild -->
     </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+
+    <body style="padding:0px;"> 
+ 
+    <div id="uw-container"> 
+        <div id="uw-container-inner">
+            <header class="uw-thinstrip">
+                <nav class="uw-thin-strip-nav">
+                    <ul class="uw-thin-links">
+                        <li>
+                            <a href="http://myuw.washington.edu" title=
+                            "MyUW">MyUW</a>
+                        </li> 
+                        <li>
+                            <a href="http://uw.edu/calendar" title=
+                            "UW Calendar">Calendar</a>
+                        </li> 
+                        <li>
+                            <a href="http://uw.edu/maps" title=
+                            "UW Maps">Maps</a>
+                        </li> 
+                        <li>
+                            <a href="http://uw.edu/directory" title=
+                            "UW Directories">Directories</a>
+                        </li>
+                    </ul>
+                </nav> 
+                <div class="container">
+                    <a class="uw-patch" href="http://uw.edu" tabindex="-1" title=
+                    "University of Washington Home">Home</a> <a class="uw-wordmark"
+                    href="http://uw.edu" title=
+                    "University of Washington Home">Home</a>
+                </div>
+            </header> 
+        </div>
+    </div>
 
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">Double Major Guide</h3>
-            </div>
 
-
-
-            <div class="row marketing"  style="margin-top: 10px;">  
-            <h1> Computer Science and Engineeing</h1>
+    <div class="container"> 
+      <div class="row marketing"  style="margin-top: 10px;">  
+          <h3 class="text-muted"><a href="/">Double Major Guide</a></h3>
+          <h1> Computer Science and Engineeing</h1>
 
           <h2 class="colored">Contact Information of Current Students</h2>
 
@@ -82,9 +107,9 @@
             </div>
 
           -->
-          </div>
+        </div>
 
-          <h2 class="colored">Contact Information of Departmental Advisers</h2>
+        <h2 class="colored">Contact Information of Departmental Advisers</h2>
 
           <div class="row">
             <div class="col-md-5 name"> 
@@ -117,11 +142,7 @@
             <li>CSE 487 → BIOEN 424</li> 
           </ul>
              
-
-
-            <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-            </div>
+ 
 
         </div>
 
@@ -132,15 +153,7 @@
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+         
 
         <!-- build:js scripts/plugins.js -->
         <script src="../bower_components/bootstrap/js/affix.js"></script>
